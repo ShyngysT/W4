@@ -1,0 +1,45 @@
+    <div><h1 class="name"> {{name}} </h1>
+        
+        
+      <img class='img' src="{{image}}" style="height:150px;width:150px">
+      <br><a href="{{link}}">Tap Here</a>  
+        <br>
+        <br>
+        {{description}}
+        <br>
+        <h1>{{rating}}</h1>
+        <br>
+
+        <button  id=tlgbutton>
+            <a id =telegram      href='https://wa.me/?text=Держи'>Share telegram</a>
+       </button>
+
+    <div *ngFor='let product of products'>
+        <div>{{product.image}}</div>
+    </div>
+   <ul class='Buttons'>
+       <li><button (click)="Select('ipX')">Iphone X</button></li>
+       <br>
+       <li><button (click)="Select('ip8')">Iphone 8</button></li>
+       <br>
+       <li><button (click)="Select('sm10')">Samsung</button></li>
+       <br>
+       <li><button (click)="Select('mi7')">Redmi note 7</button></li>
+      
+       <br>
+       <li><button (click)="Select('mi8')">Redmi note 8</button></li>
+       <br>
+       <li><button (click)="Select('mi9')">Redmi note 9</button></li>
+       <br>
+       <li><button (click)="Select('ip6')">Iphone 6 </button></li>
+       <br>
+       <li><button (click)="Select('ip6+')">Iphone 6+</button></li>
+       <br>
+       <li><button (click)="Select('mi7')">Redmi note 7</button></li>
+       <br>
+       <li><button (click)="Select('ip5')">Iphone 5</button></li>
+
+  
+</ul> 
+ 
+</div>
